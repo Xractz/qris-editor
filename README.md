@@ -1,6 +1,6 @@
 # QRIS Editor
 
-Tools CLI Python untuk membaca (decode), memvalidasi, dan mengedit kode QRIS (Quick Response Code Indonesian Standard).
+Berawal dari rasa penasaran: "Apakah data QRIS bisa diedit?" — Setelah mempelajari dokumentasi EMVCo dan struktur TLV, ternyata bisa! Namun hasil edit tidak dapat digunakan untuk pembayaran di beberapa aplikasi banking. Lihat [hasil testing](https://github.com/Xractz/qris-editor/tree/master?tab=readme-ov-file#hasil-testing-pembayaran).
 
 ## Fitur
 
