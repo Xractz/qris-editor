@@ -407,7 +407,7 @@ class TemplateGenerator:
         x = (template_width - text_width) // 2
         return (x, y)
 
-    def generate(self, output_path: str, original_data: dict = None):
+    def generate(self, output_path: str):
         if not self.TEMPLATE_PATH.exists():
             raise FileNotFoundError(f"Template not found: {self.TEMPLATE_PATH}")
         
@@ -480,13 +480,6 @@ def main():
     parser = QRISParser(qris_data)
     parser.display_info()
     
-    # Store original data for metadata
-    _orig_ = {
-        'name': parser.merchant_name,
-        'city': parser.merchant_city,
-        'postal': parser.postal_code
-    }
-    
     print("Edit Informasi Merchant:")
     print("(Tekan Enter untuk skip/tidak mengubah)\n")
     
@@ -524,7 +517,7 @@ def main():
     print("\nMembuat QR code dengan template...")
     try:
         generator = TemplateGenerator(new_qris, new_parser)
-        generator.generate(str(output_path), _orig_)
+        generator.generate(str(output_path))
         print(f"QR code baru berhasil disimpan: {output_path}")
     except FileNotFoundError as e:
         print(f"Template tidak ditemukan, menggunakan QR plain...")
@@ -537,7 +530,6 @@ def main():
     print("\n" + "="*50)
     print("        SELESAI!")
     print("="*50 + "\n")
-
 
 if __name__ == "__main__":
     main()
