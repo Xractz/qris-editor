@@ -1,0 +1,6 @@
+pyzbar>=0.1.9
+Pillow>=10.0.0
+numpy
+opencv-python-headless>=4.8.0
+qrcode>=7.4.2
+crc>=4.0.0
