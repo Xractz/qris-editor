@@ -1,6 +1,8 @@
 # QRIS Editor
 
-Berawal dari rasa penasaran: "Apakah data QRIS bisa diedit?" — Setelah mempelajari dokumentasi EMVCo dan struktur TLV, ternyata bisa! Namun hasil edit tidak dapat digunakan untuk pembayaran di beberapa aplikasi banking. Lihat [hasil testing](https://github.com/Xractz/qris-editor/tree/master?tab=readme-ov-file#hasil-testing-pembayaran).
+Berawal dari rasa penasaran: "Apakah data QRIS bisa diedit?"
+
+Setelah mempelajari dokumentasi EMVCo dan struktur TLV, ternyata bisa. Namun hasil edit tidak dapat digunakan untuk pembayaran di beberapa aplikasi banking. Lihat [hasil testing](https://github.com/Xractz/qris-editor/tree/master?tab=readme-ov-file#hasil-testing-pembayaran).
 
 ## Fitur
 
@@ -125,12 +127,12 @@ Tools melakukan validasi otomatis:
 
 ### Hasil Testing Pembayaran
 
-| Aplikasi         | Status      | Keterangan                      |
-| ---------------- | ----------- | ------------------------------- |
-| mBanking BCA     | ❌ Gagal    | "Merchant tidak ditemukan"      |
-| ShopeePay        | ❌ Gagal    | Transaksi ditolak               |
-| GoPay            | ❌ Gagal    | "03 - Merchant tidak ditemukan" |
-| **Wondr by BNI** | ✅ Berhasil | Transaksi berhasil diproses     |
+| Aplikasi         | Status      | Keterangan                      | Screenshot                                         |
+| ---------------- | ----------- | ------------------------------- | -------------------------------------------------- |
+| mBanking BCA     | ❌ Gagal    | "Merchant tidak ditemukan"      | [Lihat](assets/screenshots/m-BCA.jpeg)             |
+| ShopeePay        | ❌ Gagal    | Transaksi ditolak               | [Lihat](assets/screenshots/ShopeePay.jpeg)         |
+| GoPay            | ❌ Gagal    | "03 - Merchant tidak ditemukan" | [Lihat](assets/screenshots/GoPay.jpeg)             |
+| **Wondr by BNI** | ✅ Berhasil | Transaksi berhasil diproses     | [Lihat](assets/screenshots/Wonder%20by%20BNI.jpeg) |
 
 ## Dependensi
 

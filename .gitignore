@@ -23,6 +23,7 @@ Thumbs.db
 *.jpeg
 *.png
 !assets/template.png
+!assets/screenshots/*
 
 # Internal documentation (tidak untuk publik)
 INTERNAL.md
