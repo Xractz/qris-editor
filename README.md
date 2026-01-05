@@ -157,4 +157,4 @@ Tools ini dibuat untuk mempelajari struktur data QRIS dan spesifikasi EMVCo. Dev
 
 ## Lisensi
 
-MIT License
+[MIT License](https://github.com/Xractz/qris-editor/blob/master/LICENSE)
